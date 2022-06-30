@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExamActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="691dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/button_exit_exam"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:text="22:00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="25dp"
+            android:backgroundTint="@android:color/white"
+            android:text="nộp bài"
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_question_id_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Câu ?/35"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <TextView
+        android:id="@+id/tv_question_exam"
+        android:layout_width="378dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="16dp"
+        android:text="Câu hỏi"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <RadioButton
+                        android:id="@+id/option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="Dumb text" />
+
+                    <RadioButton
+                        android:id="@+id/option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="Dumb text" />
+
+                    <RadioButton
+                        android:id="@+id/option3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="Dumb text" />
+
+                    <RadioButton
+                        android:id="@+id/option4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="Dumb text" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/button_back_exam"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/white"
+        android:src="@drawable/smaller"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <ImageButton
+        android:id="@+id/button_next_exam"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="360dp"
+        android:background="@color/white"
+        android:src="@drawable/greater"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14">
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:numColumns="12" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
